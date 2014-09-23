@@ -151,7 +151,7 @@ shinyServer(function(input, output) {
                            x$victimname[i],
                            '<br>',
                            'Date of Shooting: ',
-                           x$dateofincident[i],
+                           datesearched[i],
                            '<br>',
                            capWords(x$city[i]),
                            ', ',
