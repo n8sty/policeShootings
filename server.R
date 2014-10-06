@@ -151,7 +151,7 @@ shinyServer(function(input, output) {
                            x$victimname[i],
                            '<br>',
                            'Date of Shooting: ',
-                           datesearched[i],
+                           x$datesearched[i],
                            '<br>',
                            capWords(x$city[i]),
                            ', ',
@@ -161,7 +161,12 @@ shinyServer(function(input, output) {
                            x$nameofofficerorofficers[i],
                            '<br>',
                            'Source: ',
-                           x$sourcelink[i]
+                           paste0('<a href="',
+                                  x$sourcelink[i],
+                                  '">',
+                                  x$sourcelink[i],
+                                  '</a>'
+                                  )
         )
       )
     }
