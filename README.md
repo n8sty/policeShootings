@@ -1,7 +1,7 @@
 police shootings
 ===============
 
-Violence committed by American police officers against civilians, justified or not, has recently been in the news. Different groups have begun or have been trying to compile data sets that attempt to understand these acts of violence. This work is an extension of those individuals.
+Violence committed by American police officers against civilians, justified or not, has recently been in the news. Different groups have begun or have been trying to compile data sets that attempt to understand these acts of violence. This work is an extension of those individuals' much needed efforts.
 
 *You can view the current pre-alpha version of the police shootings dashboard here:*   https://n8sty.shinyapps.io/policeShootingsDashboard/
 
