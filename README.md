@@ -23,3 +23,4 @@ The Gun Violence Archive is attempting to track all instances of gun violence in
 5. Identifying the days that have been completed. Meaning, some days in the Deadspin data set have been exhausted in terms of researching the police shootings that occured on those days. I want to understand the amount of unknown unknowns, ie: how many days in our time frame still exist where there could be more police shootings.
 6. Add in some sort of dashboard that provides a quick synthesis of statistics I deem important to police shootings.
 Please suggest more, or make your own and submit them.
+7. Make the shiny app a single file per the 0.10.2 release of shiny: http://blog.rstudio.org/2014/10/02/shiny-0-10-2/
