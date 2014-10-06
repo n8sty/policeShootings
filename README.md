@@ -18,7 +18,7 @@ The Gun Violence Archive is attempting to track all instances of gun violence in
 
 1. Incorporating the Fatal Encounters data set.
 2. Changing the leaflet points to something less intrusive than the current design, possibly a simple dot.
-3. Making the links workable inside the leaflet pop-ups.
+3. Making the links workable inside the leaflet pop-ups. **DONE 10/6/2014**
 4. Shifting the data source to a cloud hosted system that I set up on AWS that scrapes the Deadspin and Fatal Encounters data, attempts to merge them, and then provides single data set to source data from.
 5. Identifying the days that have been completed. Meaning, some days in the Deadspin data set have been exhausted in terms of researching the police shootings that occured on those days. I want to understand the amount of unknown unknowns, ie: how many days in our time frame still exist where there could be more police shootings.
 6. Add in some sort of dashboard that provides a quick synthesis of statistics I deem important to police shootings.
