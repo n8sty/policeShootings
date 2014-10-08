@@ -24,3 +24,4 @@ The Gun Violence Archive is attempting to track all instances of gun violence in
 6. Add in some sort of dashboard that provides a quick synthesis of statistics I deem important to police shootings.
 Please suggest more, or make your own and submit them.
 7. Make the shiny app a single file per the 0.10.2 release of shiny: http://blog.rstudio.org/2014/10/02/shiny-0-10-2/
+8. Account for duplicates in entries to the Deadspin and Fatal Encounters data sets.
