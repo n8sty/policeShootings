@@ -90,11 +90,7 @@ shootings <- shootings[!shootings$datesearched > Sys.Date(), ]
 # remove shootings with NA in the datesearched column
 shootings <- shootings[!is.na(shootings$datesearched), ]
 
-# download geo code data from http://sujee.net/tech/articles/geocoded/
-temp <- tempfile()
-download.file("http://sujee.net/tech/articles/geocoded/cities.csv.zip", temp, mode = 'wb')
-unzip(temp, "cities.csv")
-cities <- read.table("cities.csv", sep = ',', header = FALSE)
+cities <- read.csv('cities.csv') # geo code data from http://sujee.net/tech/articles/geocoded/
 names(cities) <- c('city', 'state', 'latitude', 'longitude')
 cities$city <- tolower(cities$city)
 cities$state <- factor(cities$state)
