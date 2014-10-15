@@ -1,6 +1,5 @@
 # define required libraries
 require(shiny)
-#require(mosaic) # devtools::install_github("rpruim/mosaic")
 require(RCurl)
 require(plyr)
 
@@ -31,7 +30,7 @@ loadGoogSheet <- function(URL, key = NULL,
   
 }
 
-# define the capWords function used to capitalize the worlds in a string
+# define the capWords function used to capitalize the words in a string
 capWords <- function(s, strict = FALSE) 
   {
   cap <- function(s) paste(toupper(substring(s, 1, 1)),
@@ -144,6 +143,7 @@ shinyServer(function(input, output) {
     z <- location()[3]
     map <- Leaflet$new()
     map$setView(c(lat, lon), zoom = z)
+    map$fullScreen(TRUE)
     for (i in (1:nrow(x))) {
       map$marker(
         c(jitter(x$latitude[i], factor = .01), jitter(x$longitude[i], factor = .01)),
@@ -164,7 +164,7 @@ shinyServer(function(input, output) {
                            'Source: ',
                            paste0('<a href="',
                                   x$sourcelink[i],
-                                  '">',
+                                  ' target="_blank">',
                                   x$sourcelink[i],
                                   '</a>'
                                   )
