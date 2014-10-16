@@ -112,7 +112,7 @@ shinyServer(function(input, output) {
 
   # define a reactive subset of the shootings data based on dates input by user
   shootings_subset <- reactive({
-    shootings[shootings$datesearched >= input$date[1] & shootings$datesearched <= input$date[2], ]
+    shootings[shootings$dateofincident >= input$date[1] & shootings$dateofincident <= input$date[2], ]
     })
 
   # define a reactive location based on user input of a city and state in the form of <city, state>
@@ -147,7 +147,7 @@ shinyServer(function(input, output) {
                            x$victimname[i],
                            '<br>',
                            'Date: ',
-                           x$datesearched[i],
+                           x$dateofincident[i],
                            '<br>',
                            'Location: ',
                            capWords(x$city[i]),
@@ -160,7 +160,7 @@ shinyServer(function(input, output) {
                            'Source: ',
                            paste0('<a href="',
                                   x$sourcelink[i],
-                                  ' target="_blank">',
+                                  '" target="_blank">',
                                   x$sourcelink[i],
                                   '</a>'
                                   )
