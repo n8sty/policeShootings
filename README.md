@@ -17,6 +17,7 @@ The Gun Violence Archive is attempting to track all instances of gun violence in
 *Some future ideas for enhancements:*  
 
 1. Incorporating the Fatal Encounters data set.
+2. Incorporating the Wikipedia list: https://en.wikipedia.org/wiki/List_of_killings_by_law_enforcement_officers_in_the_United_States.
 2. Changing the leaflet points to something less intrusive than the current design, possibly a simple dot.
 3. Making the links workable inside the leaflet pop-ups. **DONE 10/6/2014**
 4. Shifting the data source to a cloud hosted system that I set up on AWS that scrapes the Deadspin and Fatal Encounters data, attempts to merge them, and then provides single data set to source data from.
@@ -25,4 +26,4 @@ The Gun Violence Archive is attempting to track all instances of gun violence in
 Please suggest more, or make your own and submit them.
 7. Make the shiny app a single file per the 0.10.2 release of shiny: http://blog.rstudio.org/2014/10/02/shiny-0-10-2/
 8. Account for duplicates in entries to the Deadspin and Fatal Encounters data sets.
-9. Add a report that identifies data entries that need to be updated, amended, edited, clarified, etc.
+9. Add a report that identifies data entries that need to be updated, amended, edited, clarified , etc.
