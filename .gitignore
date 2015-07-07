@@ -3,3 +3,4 @@
 .RData
 .Rprofile
 *.sqlite
+*.zip
