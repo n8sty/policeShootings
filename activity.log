@@ -1,0 +1,38 @@
+INFO:root:2015-06-30-09:20:45 load fatal encounters into pandas df success
+INFO:root:2015-06-30-09:20:46 load deadspin into pandas df success
+INFO:root:2015-06-30-09:38:11 load fatal encounters into pandas df success
+INFO:root:2015-06-30-09:38:14 load deadspin into pandas df success
+INFO:root:2015-06-30-09:39:19 load fatal encounters into pandas df success
+INFO:root:2015-06-30-09:39:21 load deadspin into pandas df success
+INFO:root:2015-06-30-09:40:47 load fatal encounters into pandas df success
+INFO:root:2015-06-30-09:40:48 load deadspin into pandas df success
+INFO:root:2015-06-30-09:41:45 load fatal encounters into pandas df success
+INFO:root:2015-06-30-09:41:46 load deadspin into pandas df success
+INFO:root:2015-06-30-09:41:54 load fatal encounters into pandas df success
+INFO:root:2015-06-30-09:41:56 load deadspin into pandas df success
+INFO:root:2015-06-30-10:12:40 load fatal encounters into pandas df success
+INFO:root:2015-06-30-10:12:44 load deadspin into pandas df success
+INFO:root:2015-06-30-10:13:12 load fatal encounters into pandas df success
+INFO:root:2015-06-30-10:13:14 load deadspin into pandas df success
+INFO:root:2015-06-30-10:13:14 open database connection
+INFO:root:2015-06-30-10:13:14 overwrite raw fatal encounters data
+INFO:root:2015-06-30-10:15:08 load fatal encounters into pandas df success
+INFO:root:2015-06-30-10:15:09 load deadspin into pandas df success
+INFO:root:2015-06-30-10:15:09 open database connection
+INFO:root:2015-06-30-10:15:09 overwrite raw fatal encounters data
+INFO:root:2015-06-30-10:19:55 load fatal encounters into pandas df success
+INFO:root:2015-06-30-10:19:56 load deadspin into pandas df success
+INFO:root:2015-06-30-10:19:56 open database connection
+INFO:root:2015-06-30-10:19:56 overwrite raw fatal encounters data
+INFO:root:2015-06-30-11:14:12 load fatal encounters into pandas df success
+INFO:root:2015-06-30-11:14:15 load deadspin into pandas df success
+INFO:root:2015-06-30-11:14:15 open database connection
+INFO:root:2015-06-30-11:14:15 overwrite raw fatal encounters data
+INFO:root:2015-06-30-11:14:17 overwrite raw deadspin data
+INFO:root:2015-06-30-11:14:19 close database connection
+INFO:root:2015-06-30-11:46:13 load fatal encounters into pandas df success
+INFO:root:2015-06-30-11:46:16 load deadspin into pandas df success
+INFO:root:2015-06-30-11:46:16 open database connection
+INFO:root:2015-06-30-11:46:16 overwrite raw fatal encounters data
+INFO:root:2015-06-30-11:46:18 overwrite raw deadspin data
+INFO:root:2015-06-30-11:46:19 close database connection
