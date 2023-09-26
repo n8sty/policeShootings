@@ -20,8 +20,7 @@ fe = pd.read_csv(fe_url)
 ds = pd.read_csv(ds_url)
 
 def shape_check(df, cols):
-    check = df.shape[1] == cols
-    return(check)
+    return df.shape[1] == cols
     
 if shape_check(fe, 23) == False:
     print('data frame has incorrect number of columns')
@@ -58,8 +57,8 @@ def name_processor(df, col_name):
     names = names.map(lambda x: str(x).rsplit(' '))
     last_name = names.map(lambda x: try_pop(x, index = -1))
     first_name = names.map(lambda x: try_pop(x, index = 0))
-    middle_name = names.map(lambda x: str(' '.join(x)))
-    
+    middle_name = names.map(lambda x: ' '.join(x))
+
     return(last_name, first_name, middle_name, suffixes)
     
 
@@ -104,22 +103,15 @@ col_mapping = \
 def shootings_df_process(df_name, col_mappings):
     df = eval(df_name)
     length = df.shape[0]
-    
+
     cols_names = list(col_mappings[df_name].keys())
     cols_select = list(col_mappings[df_name].values())
     # create an empty dataframe as a destination for data
     df_output = pd.DataFrame(columns = col_mapping[df_name].keys())
-    
-    cnt = 0
-    for col in cols_select:
-        if col == None:
-            col_values = [None] * length
-        else:
-            col_values = df[col]
-        
+
+    for cnt, col in enumerate(cols_select):
+        col_values = [None] * length if col is None else df[col]
         df_output[cols_names[cnt]] = col_values
-        cnt += 1
-        
     return(df_output)
 
 

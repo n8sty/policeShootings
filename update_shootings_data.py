@@ -20,27 +20,27 @@ def log_activity(log_input, log_file):
     # http://goo.gl/IIee2
     import logging
     from time import strftime            
-    
+
     timestamp = strftime("%Y-%m-%d-%H:%M:%S")
-    
+
     # will create or add to the log file
     logging.basicConfig(filename = log_file, level = logging.DEBUG)
-    
-    logging.info(timestamp + ' ' + log_input)  # add in a new line character for easier reading
+
+    logging.info(f'{timestamp} {log_input}')
 
 
 def load_google_shootings_csv(url, log_str, log_file, num_cols_check):
     from pandas import read_csv
-    
+
     df = read_csv(url)
 
-    if(df.shape[0] >= 0 and df.shape[1] == num_cols_check):
-        outcome = log_str + ' success'
+    if (df.shape[0] >= 0 and df.shape[1] == num_cols_check):
+        outcome = f'{log_str} success'
     else:
-        outcome = log_str + ' failure'
-        
+        outcome = f'{log_str} failure'
+
     log_activity(outcome, log_file)
-    
+
     return(df)
 
 # def action_success_failure(logical_test):
@@ -84,11 +84,11 @@ tbl_to_update.to_sql(con = con, if_exists='replace', name = 'raw_fatal_encounter
 def update_db(db_name, tbl_to_update, df, if_exists = 'replace', log_file):
     from sqlite3 import connect
     from pandas import to_sql    
-    
+
     con = lite.connect(db_name)
     tbl_to_update.to_sql(name = tbl_to_update, con = con, flavor = 'sqlite',  if_exists = if_exists, chunksize = 50)
-    log_activity(tbl_to_update + ' updated using method ' + if_exists, log_file)
-    
+    log_activity(f'{tbl_to_update} updated using method {if_exists}', log_file)
+
     con.close()
     
 update_db('police_shootings.sqlite', 'raw_fatal_encounters', df_fe, 'replace', 'activity.log')
